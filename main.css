@@ -1,0 +1,95 @@
+/* Set project fonts */
+h1,
+h2 {
+    color: #AB2A11;
+    font-family: "Cormorant Infant", serif;
+    text-align: center;
+    line-height: 1.0;
+    /* Center the heading */
+}
+
+body {
+    font-family: "Quattrocento Sans", sans-serif;
+    background-color: #f2f0ec;
+    /* Light gray background */
+    color: #333;
+    /* Dark gray text color */
+    line-height: 1.4;
+}
+
+/* Set up grid */
+#project-description {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#map {
+    width: 100%;
+    /* Make it fill the container width */
+    border: 1px solid #6e6c6c;
+    height: 700px;
+    /* Map height must be defined */
+}
+
+/* Header should take up the fill width of the page */
+.page-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    /* Creates two columns: first takes 1 fraction, second takes 3 fractions of space */
+    grid-template-columns: 5fr 2fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Adds spacing between your grid rows and columns */
+}
+
+#viaf-div {
+    text-align: center;
+}
+
+a {
+    color: #5d2713;
+}
+
+/* Optional styling for visualization */
+.item {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+#info {
+    padding-left: 20px;
+}
+
+/* Adapted from https://leafletjs.com/examples/choropleth/ */
+.legend {
+    line-height: 18px;
+    color: #555;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+}
+
+.default-prompt p {
+    size: 18pt;
+    padding: 10px;
+}
+
+/* Page footer */
+#page-footer p {
+    padding-right: 1rem;
+    float: right;
+    color: rgb(24, 21, 31);
+}

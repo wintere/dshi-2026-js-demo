@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping the 18th-Century London Theatrical Community: The Newcomers</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Link to our specific CSS for this page -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Font imports-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="main-layout"> 
+        <div id="project-description" class="page-header">
+            <h1>Mapping the 18th-Century London Theatrical Community: The Newcomers</h1>
+            <p>The theatrical community of the long eighteenth century includes notable actors, performers, playwrights,
+                librettists, theatrical personnel, artists, and composers. This map, drawing on
+                the <a href="https://data.theatronomics.com/people" target="_blank">Theatronomics</a>
+                dataset, maps the birthplaces of hundreds of British contributors to the vibrant London stage
+                born <i>outside</i> a five-mile radius of London.
+            </p>
+        </div>
+        <br>
+        <div class="container"> <!--Main page container: map on left, dynamic info box on right-->
+            <div id="map" class="item"></div>
+            <div id="info" class="item">
+                <h2 id="person-name"></h2>
+                <div id="viaf-div">
+                    <p><a class="meta-link" id="viaf-link" target="_blank"></a><span id="viaf-divider"> | </span>
+                        <a class="meta-link" id="wikidata-link" target="_blank"></a>
+                    </p>
+                </div>
+                <div id="info-body">
+                    <p>Click a pin on the map to learn more about each person.</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End container -->
+    <div id="page-footer">
+        <p>&copy; 2026 <a href="https://github.com/wintere" target="_blank">Erin M. Winter</a></p>
+    </div>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="lsdb-map.js"></script>
+</body>
+
+</html>
