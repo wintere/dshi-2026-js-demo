@@ -10,14 +10,12 @@ Completed in about 8 hours, with a few
 adjustments applied after the
 conference.
 
-## Requirements 
-* A Python virtual environment with the `dotenv` library
-* A MapTiler API key
-
-To deploy locally, you will need to populate a `.env` file with a valid
-[MapTiler](https://www.maptiler.com/) API key. A free account is sufficient
-to query and serve the basemap used for this project.
-
+## Structure
+* `data/people.json` - candidate data points
+* `images/` - custom LeafletJS icons
+* `index.html` - site HTML
+* `lsdb-map.js` - builds interactive map with LeafletJS, JQuery and vanilla JavaScript
+* `main.css` - styling
 
 ## Data
 The site relies on lightly standardized personography data from

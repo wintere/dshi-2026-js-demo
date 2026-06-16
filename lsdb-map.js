@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const map = L.map('map').setView([54.977238852655034, -4.8475691922206385], 5); // NYC Coordinates [lat, lng], Zoom level 13
 
     // Add basemap, in this case a neutral maptiler one, load API key   
-    const API_KEY = process.env.MAPTILER_API_KEY;
-    L.tileLayer(`https://api.maptiler.com/maps/landscape-v4/{z}/{x}/{y}.png?key=${API_KEY}`, {
+    L.tileLayer(`https://api.maptiler.com/maps/landscape-v4/{z}/{x}/{y}.png?key=Z6psnzpcddvNHSQUpZCT`, {
         minZoom: 5,
         maxZoom: 13, // Max zoom level for these tiles
         attribution: '&copy; <a href="https://cloud.maptiler.com/maps/landscape-v4/">MapTiler</a>'
